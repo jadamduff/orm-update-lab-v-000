@@ -60,7 +60,8 @@ class Student
   end
 
   def find_by_name(name)
-
+    sql = "SELECT * FROM students WHERE name = ? LIMIT 1;"
+    DB[:conn].execute(sql, name).first
   end
 
 end
