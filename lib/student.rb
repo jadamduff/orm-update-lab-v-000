@@ -59,7 +59,7 @@ class Student
     student.id = row[0]
     student.name = [1]
     student.grade = [2]
-    student.save
+    student
   end
 
 end
